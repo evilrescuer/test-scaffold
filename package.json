@@ -8,7 +8,8 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --headless --browser chrome",
     "cypress": "concurrently \"yarn start\" \"yarn run cypress:run\"",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint --fix"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,12 @@
     "babel-jest": "^26.3.0",
     "concurrently": "^5.3.0",
     "cypress": "^5.2.0",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
     "husky": "^4.3.0",
     "jest": "^26.4.2",
     "jest-coverage-ratchet": "^0.2.3",

@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import TestRenderer from 'react-test-renderer';
 
-import App from '../app.js';
+import App from '../app.jsx';
 
 describe('App', () => {
   test('should render App component', () => {
@@ -16,5 +16,5 @@ describe('App', () => {
 
     // const { getByTestId } = render(<App />);
     // expect(getByTestId('app').textContent).toBe('Hello World');
-  })
+  });
 });
