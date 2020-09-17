@@ -9,7 +9,8 @@
     "cypress:run": "cypress run --headless --browser chrome",
     "cypress": "concurrently \"yarn start\" \"yarn run cypress:run\"",
     "test": "jest",
-    "lint": "eslint --fix"
+    "lint": "eslint --fix",
+    "format": "yarn prettier --write ."
   },
   "keywords": [],
   "author": "",
@@ -34,12 +35,13 @@
     "jest": "^26.4.2",
     "jest-coverage-ratchet": "^0.2.3",
     "parcel-bundler": "^1.12.4",
+    "prettier": "2.1.2",
     "react-test-renderer": "^16.13.1"
   },
   "type": "module",
   "husky": {
     "hooks": {
-      "pre-commit": "jest --coverage",
+      "pre-commit": "yarn format",
       "pre-push": "jest --coverage"
     }
   },

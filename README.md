@@ -1,7 +1,9 @@
 ## Development Environment
+
 - Node.js: `>=12.0.0`
 
 ## Install dependencies
+
 `yarn`
 
 ## Start Server
