@@ -23,9 +23,30 @@
     "babel-jest": "^26.3.0",
     "concurrently": "^5.3.0",
     "cypress": "^5.2.0",
+    "husky": "^4.3.0",
     "jest": "^26.4.2",
+    "jest-coverage-ratchet": "^0.2.3",
     "parcel-bundler": "^1.12.4",
     "react-test-renderer": "^16.13.1"
   },
-  "type": "module"
+  "type": "module",
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run test",
+      "pre-push": "yarn run test"
+    }
+  },
+  "jest": {
+    "coverageReporters": [
+      "json-summary"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 10,
+        "functions": 10,
+        "lines": 10,
+        "statements": 10
+      }
+    }
+  }
 }
